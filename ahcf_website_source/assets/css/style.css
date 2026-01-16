@@ -235,11 +235,12 @@ body {
 
 .logo-image {
   height: 50px;
-  width: auto;
+  width: 50px;
   max-width: 100%;
   object-fit: contain;
   transition: height 0.3s ease;
   flex-shrink: 0;
+  border-radius: 50%;
 }
 
 .logo h1 {

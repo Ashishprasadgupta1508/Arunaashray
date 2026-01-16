@@ -102,14 +102,18 @@
       <div class="logo">
         <img src="assets/images/Logo.png" alt="AHCF Logo" class="logo-image">
       </div>
-      <nav class="nav-menu">
+      <button class="hamburger" id="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+      <nav class="nav-menu" id="navMenu">
         <a href="index.html" class="nav-link">Home</a>
         <a href="about.html" class="nav-link active">About Us</a>
         <a href="services.html" class="nav-link">Services</a>
         <a href="work.html" class="nav-link">Our Work</a>
         <a href="contact.html" class="nav-link">Contact</a>
         <a href="donate.html" class="nav-link donate-btn">Donate</a>
-
       </nav>
     </div>
   </header>
@@ -274,7 +278,6 @@
   <!-- CTA -->
   <section class="cta">
     <div class="container">
-      <h2>Join Our Mission</h2>
       <p>Together, we can make healthcare accessible to everyone</p>
       <a href="donate.html" class="btn btn-primary btn-large">Donate Now</a>
     </div>
@@ -318,6 +321,27 @@
     </div>
   </footer>
 
+  <script src="assets/js/script.js"></script>
+  <script>
+    // Hamburger menu toggle
+    const hamburger = document.getElementById('hamburger');
+    const navMenu = document.getElementById('navMenu');
+
+    if (hamburger && navMenu) {
+      hamburger.addEventListener('click', function () {
+        navMenu.classList.toggle('active');
+        hamburger.classList.toggle('active');
+      });
+
+      // Close menu when a link is clicked
+      document.querySelectorAll('.nav-link').forEach(link => {
+        link.addEventListener('click', function () {
+          navMenu.classList.remove('active');
+          hamburger.classList.remove('active');
+        });
+      });
+    }
+  </script>
 </body>
 
 </html>

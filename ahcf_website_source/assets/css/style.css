@@ -184,6 +184,7 @@ body {
   max-width: 1400px;
   margin: 0 auto;
   width: 100%;
+  gap: 20px;
 }
 
 /* Hamburger Menu */
@@ -197,6 +198,8 @@ body {
   gap: 5px;
   z-index: 1001;
   position: relative;
+  flex-shrink: 0;
+  margin-left: auto;
 }
 
 .hamburger span {
@@ -227,6 +230,7 @@ body {
   gap: 10px;
   flex-shrink: 0;
   min-width: 0;
+  flex-grow: 0;
 }
 
 .logo-image {
@@ -235,6 +239,7 @@ body {
   max-width: 100%;
   object-fit: contain;
   transition: height 0.3s ease;
+  flex-shrink: 0;
 }
 
 .logo h1 {
@@ -2291,21 +2296,24 @@ body {
   }
 
   .navbar .container {
-    padding: 0 16px;
-    gap: 20px;
+    padding: 0 12px;
+    gap: 12px;
+    justify-content: flex-start;
   }
 
   .logo {
-    min-width: auto;
-    flex-grow: 1;
+    flex-shrink: 0;
+    flex-grow: 0;
   }
 
   .logo-image {
-    height: 52px;
+    height: 54px;
   }
 
   .hamburger {
     display: flex;
+    margin-left: auto;
+    flex-shrink: 0;
   }
 
   .nav-menu {
@@ -2387,30 +2395,30 @@ body {
   }
 
   .navbar .container {
-    padding: 0 12px;
-    gap: 15px;
+    padding: 0 10px;
+    gap: 10px;
+    justify-content: flex-start;
   }
 
   .logo {
-    gap: 8px;
-    min-width: auto;
-    flex-grow: 1;
+    flex-shrink: 0;
   }
 
   .logo-image {
-    height: 48px;
+    height: 50px;
   }
 
   .logo h1 {
-    font-size: 18px;
+    display: none;
   }
 
   .logo p {
-    font-size: 9px;
+    display: none;
   }
 
   .hamburger {
     display: flex;
+    margin-left: auto;
     padding: 6px;
     flex-shrink: 0;
   }
@@ -2418,7 +2426,6 @@ body {
   .hamburger span {
     width: 24px;
     height: 2.5px;
-    gap: 4px;
   }
 
   .nav-menu {

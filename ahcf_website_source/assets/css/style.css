@@ -138,6 +138,9 @@ section:hover {
 
 h1, h2, h3 {
   animation: slideInUp 0.6s ease-out;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+  word-break: break-word;
 }
 
 body {
@@ -145,6 +148,9 @@ body {
   line-height: 1.6;
   color: var(--text-dark);
   background-color: var(--white);
+  overflow-x: hidden;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .container {
@@ -153,6 +159,9 @@ body {
   padding: 0 20px;
   border-radius: 0 !important;
   clip-path: none !important;
+  width: 100%;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /* Navigation Header */
@@ -2210,6 +2219,9 @@ body {
 @media (max-width: 480px) {
   .container {
     padding: 15px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .navbar .container {
@@ -2234,27 +2246,49 @@ body {
   }
 
   .page-header h1 {
-    font-size: 24px;
+    font-size: 22px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 10px;
   }
 
   .page-header p {
     font-size: 14px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0 10px;
   }
 
   h2 {
-    font-size: 24px;
+    font-size: 22px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   h3 {
-    font-size: 20px;
+    font-size: 18px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   h4 {
-    font-size: 16px;
+    font-size: 15px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   p {
-    font-size: 14px;
+    font-size: 13px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
   }
 
   .btn {
@@ -2314,6 +2348,9 @@ body {
 @media (max-width: 768px) {
   .container {
     padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    overflow-x: hidden;
   }
 
   .navbar .container {
@@ -2333,7 +2370,7 @@ body {
   }
 
   .hero h2 {
-    font-size: 32px;
+    font-size: 28px;
   }
 
   .hero p {
@@ -2386,6 +2423,9 @@ body {
 
   .page-header h1 {
     font-size: 28px;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    word-break: break-word;
   }
 
   .mission-card {

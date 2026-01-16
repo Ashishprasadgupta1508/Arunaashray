@@ -6,6 +6,71 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>🩺 Training Programs - Arunaashray Health Care Foundation</title>
     <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+        /* Mobile responsive grid fixes */
+        @media (max-width: 768px) {
+            div[style*="grid-template-columns:1.1fr"] {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: 30px !important;
+            }
+
+            .circle-grid {
+                display: grid !important;
+                grid-template-columns: repeat(2, 1fr) !important;
+                gap: 15px !important;
+            }
+
+            .circle-card {
+                width: 140px !important;
+                height: 140px !important;
+            }
+
+            .circle-card:hover {
+                width: 140px !important;
+                height: 140px !important;
+            }
+
+            .circle-summary h4 {
+                font-size: 13px !important;
+            }
+        }
+
+        @media (max-width: 480px) {
+            div[style*="grid-template-columns:1.1fr"] {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: 20px !important;
+            }
+
+            .circle-grid {
+                display: grid !important;
+                grid-template-columns: 1fr !important;
+                gap: 12px !important;
+            }
+
+            .circle-card {
+                width: 120px !important;
+                height: 120px !important;
+            }
+
+            .circle-card:hover {
+                width: 120px !important;
+                height: 120px !important;
+                border-radius: 50% !important;
+            }
+
+            .circle-summary h4 {
+                font-size: 12px !important;
+                margin-top: 5px !important;
+            }
+
+            .circle-summary>div {
+                font-size: 28px !important;
+            }
+        }
+    </style>
 </head>
 
 <body>

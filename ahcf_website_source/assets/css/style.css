@@ -2751,6 +2751,63 @@ body {
     grid-template-columns: 1fr;
     gap: 15px;
   }
+
+  /* Mobile fixes for circle cards and program layouts */
+  .circle-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 15px;
+    justify-items: center;
+    margin-top: 30px;
+  }
+
+  .circle-card {
+    width: 140px;
+    height: 140px;
+  }
+
+  .circle-card:hover {
+    width: 140px;
+    height: 140px;
+    border-radius: 50%;
+  }
+
+  .circle-summary {
+    padding: 10px;
+  }
+
+  .circle-summary h4 {
+    margin-top: 8px;
+    font-size: 13px;
+  }
+
+  .circle-summary > div {
+    font-size: 32px;
+  }
+
+  .circle-card:hover .circle-details {
+    opacity: 0;
+  }
+
+  .circle-card:hover .circle-summary {
+    opacity: 1;
+  }
+
+  /* Fix inline grid layouts on mobile */
+  div[style*="grid-template-columns:1.1fr"] {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 30px !important;
+  }
+
+  .programs-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .program-detail-card {
+    padding: 20px;
+  }
 }
 
 /* Tablet Devices (Medium Devices) */
@@ -2926,6 +2983,38 @@ body {
   .services-grid {
     grid-template-columns: repeat(2, 1fr);
     gap: 20px;
+  }
+
+  /* Tablet fixes for circle cards and program layouts */
+  .circle-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    margin-top: 40px;
+  }
+
+  .circle-card {
+    width: 160px;
+    height: 160px;
+  }
+
+  .circle-summary h4 {
+    font-size: 14px;
+  }
+
+  .programs-detail-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .program-detail-card {
+    padding: 25px;
+  }
+
+  /* Fix inline grid layouts on tablet */
+  div[style*="grid-template-columns:1.1fr"] {
+    display: grid !important;
+    grid-template-columns: 1fr !important;
+    gap: 40px !important;
   }
 }
 

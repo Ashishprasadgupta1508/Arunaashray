@@ -19,6 +19,8 @@
 
 html {
   scroll-behavior: smooth;
+  box-sizing: border-box;
+  overflow-x: hidden;
 }
 
 /* Global Animations */
@@ -2529,8 +2531,6 @@ body {
     padding: 11px 18px;
     font-size: 14px;
   }
-}
-
 
   .logo-image {
     max-width: 80px;
@@ -2687,6 +2687,71 @@ body {
     padding: 40px 0 !important;
   }
 
+  /* Mobile Grid Fixes */
+  .contact-info-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .contact-info-card {
+    padding: 20px;
+  }
+
+  .contact-icon {
+    font-size: 32px;
+    margin-bottom: 10px;
+  }
+
+  .contact-info-card h4 {
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+
+  .contact-info-card p {
+    font-size: 13px;
+    margin-bottom: 8px;
+  }
+
+  .team-grid {
+    grid-template-columns: 1fr;
+    gap: 20px;
+  }
+
+  .team-member {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+
+  .team-member img {
+    width: 140px;
+    height: 140px;
+    margin: 10px auto 0;
+  }
+
+  .team-member h4 {
+    font-size: 16px;
+    margin: 12px 0 5px;
+  }
+
+  .team-member p {
+    font-size: 13px;
+    margin-bottom: 6px;
+  }
+
+  .team-member small {
+    font-size: 12px;
+    padding: 0 10px;
+  }
+
+  .president-section .team-member {
+    max-width: 100%;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+}
 
 /* Tablet Devices (Medium Devices) */
 @media (max-width: 768px) {
@@ -2828,6 +2893,39 @@ body {
 
   .program-grid {
     grid-template-columns: 1fr;
+  }
+
+  /* Mobile Grid Fixes for Tablets */
+  .contact-info-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .contact-info-card {
+    padding: 20px;
+  }
+
+  .contact-icon {
+    font-size: 32px;
+  }
+
+  .team-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .team-member {
+    margin: 0;
+  }
+
+  .team-member img {
+    width: 150px;
+    height: 150px;
+  }
+
+  .services-grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
 }
 

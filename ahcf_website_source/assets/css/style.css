@@ -2287,19 +2287,21 @@ body {
 /* Small Devices (Mobile Phones) */
 @media (max-width: 768px) {
   .navbar {
-    padding: 10px 0;
+    padding: 12px 0;
   }
 
   .navbar .container {
-    padding: 0 12px;
+    padding: 0 16px;
+    gap: 20px;
   }
 
   .logo {
     min-width: auto;
+    flex-grow: 1;
   }
 
   .logo-image {
-    height: 45px;
+    height: 52px;
   }
 
   .hamburger {
@@ -2381,19 +2383,22 @@ body {
 
 @media (max-width: 480px) {
   .navbar {
-    padding: 8px 0;
+    padding: 10px 0;
   }
 
   .navbar .container {
     padding: 0 12px;
+    gap: 15px;
   }
 
   .logo {
     gap: 8px;
+    min-width: auto;
+    flex-grow: 1;
   }
 
   .logo-image {
-    height: 40px;
+    height: 48px;
   }
 
   .logo h1 {
@@ -2406,16 +2411,19 @@ body {
 
   .hamburger {
     display: flex;
+    padding: 6px;
+    flex-shrink: 0;
   }
 
   .hamburger span {
-    width: 23px;
+    width: 24px;
     height: 2.5px;
+    gap: 4px;
   }
 
   .nav-menu {
     position: fixed;
-    top: 60px;
+    top: 56px;
     left: 0;
     right: 0;
     background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
@@ -2423,19 +2431,44 @@ body {
     gap: 0;
     max-height: 0;
     overflow: hidden;
+    overflow-y: auto;
     transition: max-height 0.35s ease;
     width: 100%;
     padding: 0;
   }
 
   .nav-menu.active {
-    max-height: 420px;
-    padding: 10px 0;
+    max-height: calc(100vh - 56px);
+    padding: 8px 0;
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
   }
 
   .nav-link {
-    padding: 10px 16px;
-    font-size: 15px;
+    padding: 12px 14px;
+    font-size: 14px;
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+  }
+
+  .nav-link:hover {
+    padding-left: 18px;
+    background: rgba(255, 255, 255, 0.12);
+  }
+
+  .nav-link.active {
+    padding-left: 10px;
+    background: rgba(255, 255, 255, 0.15);
+    border-left: 4px solid var(--white);
+  }
+
+  .nav-link.donate-btn {
+    margin: 6px 8px 0 8px;
+    width: calc(100% - 16px);
+    padding: 10px 14px;
+    border-left: none;
+  }
+
+  .nav-link.donate-btn:hover {
+    padding-left: 14px;
   }
 
   .nav-link.donate-btn {

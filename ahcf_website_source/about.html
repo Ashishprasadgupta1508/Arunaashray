@@ -91,6 +91,105 @@
       color: #222;
       font-weight: 700;
     }
+
+    /* Mobile Responsiveness */
+    @media (max-width: 768px) {
+      .team-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+        margin-top: 20px;
+      }
+
+      .team-member {
+        padding-bottom: 15px;
+      }
+
+      .team-member img {
+        width: 150px;
+        height: 150px;
+        margin: 12px auto 0;
+      }
+
+      .team-member h4 {
+        margin: 12px 0 5px;
+        font-size: 16px;
+      }
+
+      .team-member p {
+        font-size: 13px;
+        margin-bottom: 6px;
+      }
+
+      .team-member small {
+        font-size: 12px;
+        padding: 0 12px;
+      }
+
+      .president-section {
+        margin-bottom: 30px;
+      }
+
+      .president-section .team-member {
+        max-width: 100%;
+      }
+
+      .president-section .team-member img {
+        width: 150px;
+        height: 150px;
+      }
+    }
+
+    @media (max-width: 480px) {
+      .team-grid {
+        grid-template-columns: 1fr;
+        gap: 18px;
+      }
+
+      .team-member {
+        padding-bottom: 15px;
+      }
+
+      .team-member img {
+        width: 140px;
+        height: 140px;
+        margin: 10px auto 0;
+      }
+
+      .team-member h4 {
+        margin: 10px 0 5px;
+        font-size: 15px;
+      }
+
+      .team-member p {
+        font-size: 12px;
+        margin-bottom: 5px;
+      }
+
+      .team-member small {
+        font-size: 11px;
+        padding: 0 10px;
+      }
+
+      .president-section {
+        margin-bottom: 20px;
+        margin-top: 20px;
+      }
+
+      .president-section .team-member {
+        max-width: 100%;
+      }
+
+      .president-section .team-member img {
+        width: 130px;
+        height: 130px;
+      }
+
+      .team-heading {
+        margin-top: 30px;
+        margin-bottom: 20px;
+        font-size: 22px;
+      }
+    }
   </style>
 </head>
 

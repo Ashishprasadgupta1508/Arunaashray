@@ -1,7 +1,7 @@
 /* Global Styles */
 :root {
-  --primary-color: #009aa8;
-  --secondary-color: #00315f;
+  --primary-color: #fd971a;
+  --secondary-color: #ef8708;
   --accent-color: #ff6b6b;
   --light-bg: #f8f8f8;
   --text-dark: #333;
@@ -9,7 +9,8 @@
   --white: #edeff2;
   --shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   --transition: all 0.3s ease;
-}
+}adjust the background colour
+
 
 * {
   margin: 0;
@@ -90,10 +91,10 @@ html {
 
 @keyframes textGlow {
   0%, 100% {
-    text-shadow: 0 0 0 rgba(0, 170, 107, 0.3);
+    text-shadow: 0 0 0 rgba(253, 151, 26, 0.6);
   }
   50% {
-    text-shadow: 0 0 20px rgba(0, 170, 107, 0.6);
+    text-shadow: 0 0 20px rgba(253, 151, 26, 0.6);
   }
 }
 
@@ -314,7 +315,7 @@ body {
 }
 
 .donate-btn:hover {
-  background: #ff5252;
+  background: var(--accent-color);
   transform: translateY(-2px);
   box-shadow: 0 4px 12px rgba(255, 107, 107, 0.3);
 }
@@ -323,21 +324,49 @@ body {
 .page-header {
   background: linear-gradient(135deg, var(--primary-color) 0%, var(--secondary-color) 100%);
   color: var(--white);
-  padding: 60px 0;
+  padding: 80px 20px;
   text-align: center;
   animation: slideInDown 0.8s ease-out;
+  position: relative;
+  overflow: hidden;
+}
+
+.page-header::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.25);
+  pointer-events: none;
+}
+
+.page-header > * {
+  position: relative;
+  z-index: 1;
 }
 
 .page-header h1 {
-  font-size: 40px;
-  margin-bottom: 10px;
+  font-size: 48px;
+  font-weight: 900;
+  margin-bottom: 15px;
   animation: slideInUp 0.7s ease-out 0.2s both;
+  text-shadow: 4px 4px 16px rgba(0, 0, 0, 0.6);
+  letter-spacing: 1px;
+  line-height: 1.2;
+  color: #ffffff;
 }
 
 .page-header p {
-  font-size: 18px;
-  opacity: 0.9;
+  font-size: 20px;
+  font-weight: 600;
+  opacity: 1;
   animation: fadeIn 0.8s ease-out 0.4s both;
+  text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.5);
+  letter-spacing: 0.5px;
+  line-height: 1.6;
+  color: #ffffff;
 }
 
 /* Hero Section */
@@ -356,7 +385,7 @@ body {
   position: absolute;
   width: 150px;
   height: 150px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.25) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
   border-radius: 50%;
   top: 10%;
   left: 10%;
@@ -369,7 +398,7 @@ body {
   position: absolute;
   width: 100px;
   height: 100px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.2) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, transparent 70%);
   border-radius: 50%;
   bottom: 15%;
   right: 10%;
@@ -383,7 +412,7 @@ body {
   position: absolute;
   width: 120px;
   height: 120px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.15) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.1) 0%, transparent 70%);
   border-radius: 50%;
   top: 30%;
   right: 5%;
@@ -396,7 +425,7 @@ body {
   position: absolute;
   width: 80px;
   height: 80px;
-  background: radial-gradient(circle, rgba(255, 255, 255, 0.18) 0%, transparent 70%);
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.12) 0%, transparent 70%);
   border-radius: 50%;
   bottom: 20%;
   left: 5%;
@@ -498,18 +527,23 @@ body {
 }
 
 .hero h2 {
-  font-size: 48px;
+  font-size: 56px;
   color: var(--white);
   margin-bottom: 20px;
   line-height: 1.2;
-  font-weight: 700;
+  font-weight: 800;
+  text-shadow: 3px 3px 12px rgba(0, 0, 0, 0.3);
+  letter-spacing: 1px;
 }
 
 .hero p {
-  font-size: 18px;
-  color: rgba(255, 255, 255, 0.9);
+  font-size: 20px;
+  color: rgba(255, 255, 255, 0.95);
   margin-bottom: 30px;
-  line-height: 1.6;
+  line-height: 1.7;
+  font-weight: 500;
+  text-shadow: 1px 1px 6px rgba(0, 0, 0, 0.2);
+  letter-spacing: 0.5px;
 }
 
 .hero-gallery {
@@ -624,7 +658,7 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 5px 15px rgba(0, 168, 107, 0.3);
+  box-shadow: 0 5px 15px rgba(253, 151, 26, 0.3);
 }
 
 .btn-primary {
@@ -712,13 +746,13 @@ body {
 
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 154, 168, 0.2);
+  box-shadow: 0 15px 40px rgba(253, 151, 26, 0.2);
 }
   
 
 .service-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 8px 20px rgba(0, 168, 107, 0.15);
+  box-shadow: 0 8px 20px rgba(255, 149, 2, 0.15);
 }
 
 .service-icon {
@@ -786,7 +820,7 @@ body {
 
 .service-link:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 30px rgba(0, 168, 107, 0.2) !important;
+  box-shadow: 0 12px 30px rgba(253, 151, 26, 0.2) !important;
 }
 
 @keyframes slideDown {
@@ -874,7 +908,7 @@ body {
 }
 
 .cta .btn:hover {
-  background: #ff5252;
+  background: var(--accent-color);
 }
 
 /* Footer */
@@ -964,7 +998,7 @@ body {
 
 .mission-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 30px rgba(0, 168, 107, 0.15);
+  box-shadow: 0 12px 30px rgba(253, 151, 26, 0.15);
 }
 
 .mission-card .icon {
@@ -1077,7 +1111,7 @@ body {
 
 .timeline-item:hover {
   transform: translateX(10px);
-  box-shadow: 0 8px 25px rgba(0, 168, 107, 0.1);
+  box-shadow: 0 8px 25px rgba(253, 151, 26, 0.1);
 }
 
 .timeline-date {
@@ -1122,18 +1156,18 @@ body {
 }
 
 .metric-card {
-  background: linear-gradient(135deg, var(--primary-color), #005f47);
+  background: linear-gradient(135deg, var(--primary-color), var(--secondary-color));
   padding: 40px 30px;
   border-radius: 10px;
   text-align: center;
   color: var(--white);
-  box-shadow: 0 8px 25px rgba(0, 168, 107, 0.2);
+  box-shadow: 0 8px 25px rgba(253, 151, 26, 0.2);
   transition: all 0.3s ease;
 }
 
 .metric-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 168, 107, 0.3);
+  box-shadow: 0 15px 40px rgba(253, 151, 26, 0.3);
 }
 
 .metric-number {
@@ -1318,7 +1352,7 @@ body {
 
 .program-detail-card:hover {
   transform: translateY(-5px);
-  box-shadow: 0 8px 20px rgba(0, 168, 107, 0.15);
+  box-shadow: 0 8px 20px rgba(253, 151, 26, 0.15);
 }
 
 .program-detail-icon {
@@ -1722,7 +1756,7 @@ body {
 
 .method-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 15px 40px rgba(0, 154, 168, 0.2);
+  box-shadow: 0 15px 40px rgba(253, 151, 26, 0.2);
 }
 
 .method-icon {
@@ -1911,8 +1945,8 @@ body {
 
 .contact-info-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 12px 30px rgba(0, 168, 107, 0.2);
-  background: linear-gradient(135deg, rgba(0, 168, 107, 0.05) 0%, rgba(255, 255, 255, 1) 100%);
+  box-shadow: 0 12px 30px rgba(253, 151, 26, 0.2);
+  background: linear-gradient(135deg, rgba(253, 151, 26, 0.05) 0%, rgba(255, 255, 255, 1) 100%);
 }
 
 .contact-icon {
@@ -1950,7 +1984,7 @@ body {
 
 .contact-info-card:hover h4 {
   color: var(--secondary-color);
-  text-shadow: 0 2px 4px rgba(0, 168, 107, 0.1);
+  text-shadow: 0 2px 4px rgba(253, 151, 26, 0.1);
 }
 
 .contact-info-card p {
@@ -2080,7 +2114,7 @@ body {
 .form-group textarea:focus {
   outline: none;
   border-color: var(--primary-color);
-  box-shadow: 0 0 5px rgba(0, 168, 107, 0.2);
+  box-shadow: 0 0 5px rgba(253, 151, 26, 0.2);
   transform: scale(1.01);
 }
 
@@ -2380,7 +2414,7 @@ body {
   }
 
   .nav-link.donate-btn:hover {
-    background: #ff5252;
+    background: #fa2727;
     padding-left: 18px;
   }
 
@@ -3095,7 +3129,7 @@ body {
   color: white;
   border-color: var(--primary-color);
   transform: translateY(-2px);
-  box-shadow: 0 4px 12px rgba(0, 168, 107, 0.15);
+  box-shadow: 0 4px 12px rgba(253, 151, 26, 0.15);
 }
 
 /* ================================
@@ -3279,10 +3313,10 @@ body {
 
 @keyframes glow {
   0%, 100% {
-    box-shadow: 0 2px 8px rgba(0, 168, 107, 0.2);
+    box-shadow: 0 2px 8px rgba(253, 151, 26, 0.2);
   }
   50% {
-    box-shadow: 0 2px 16px rgba(0, 168, 107, 0.4);
+    box-shadow: 0 2px 16px rgba(253, 151, 26, 0.4);
   }
 }
 
@@ -3316,15 +3350,15 @@ body {
 
 .btn:hover {
   transform: translateY(-3px);
-  box-shadow: 0 8px 16px rgba(0, 168, 107, 0.3);
+  box-shadow: 0 8px 16px rgba(253, 151, 26, 0.3);
 }
 
 .btn-primary:hover {
-  background-color: #009aa8;
+  background-color: #fd971a;
 }
 
 .btn-secondary:hover {
-  background-color: #004d3a;
+  background-color: #fd971ad0;
 }
 
 /* Service Cards Animation */
@@ -3357,7 +3391,7 @@ body {
 
 .service-card:hover {
   transform: translateY(-8px);
-  box-shadow: 0 12px 24px rgba(0, 168, 107, 0.2);
+  box-shadow: 0 12px 24px rgba(253, 151, 26, 0.2);
 }
 
 .service-icon {
@@ -3381,7 +3415,7 @@ body {
 
 .program-card:hover {
   transform: translateY(-10px);
-  box-shadow: 0 16px 32px rgba(0, 168, 107, 0.25);
+  box-shadow: 0 16px 32px rgba(253, 151, 26, 0.6);
 }
 
 /* Section Heading Animations */
@@ -3701,7 +3735,7 @@ li:hover {
 /* CTA Button Glow */
 .cta .btn {
   position: relative;
-  box-shadow: 0 4px 15px rgba(0, 168, 107, 0.3);
+  box-shadow: 0 4px 15px rgba(253, 151, 26, 0.6);
 }
 
 .cta .btn:hover {
@@ -3868,7 +3902,7 @@ a {
 .service-card,
 .program-card,
 .circle-card {
-  box-shadow: 0 4px 12px rgba(0, 168, 107, 0.1);
+  box-shadow: 0 4px 12px rgba(253, 151, 26, 0.1);
   transition: all 0.4s cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
@@ -3879,7 +3913,7 @@ h1, h2, h3, h4, h5, h6 {
 
 h2:hover {
   color: var(--primary-color);
-  text-shadow: 0 0 20px rgba(0, 168, 107, 0.2);
+  text-shadow: 0 0 20px rgba(253, 151, 26, 0.2);
 }
 
 /* List Item Enhanced Hover */

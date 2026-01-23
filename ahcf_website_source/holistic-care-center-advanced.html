@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Holistic Care Center - Arunaashray Health Care Foundation</title>
+    <link rel="stylesheet" href="assets/css/style.css" />
+
+    <style>
+        .care-block {
+            background: #f8f9fa;
+            border-radius: 14px;
+            padding: 45px;
+            margin-bottom: 50px;
+            transition: all 0.35s ease;
+            border-left: 6px solid #00a86b;
+        }
+
+        .care-block:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 18px 40px rgba(0, 0, 0, 0.12);
+            background: #ffffff;
+        }
+
+        .care-block h3 {
+            font-size: 28px;
+            color: #00a86b;
+            margin-bottom: 20px;
+        }
+
+        .care-block p {
+            font-size: 16px;
+            line-height: 1.8;
+            color: #666;
+            margin-bottom: 20px;
+        }
+
+        .services-list {
+            list-style: none;
+            margin-top: 20px;
+        }
+
+        .services-list li {
+            padding-left: 30px;
+            position: relative;
+            margin-bottom: 12px;
+            font-size: 15px;
+            color: #555;
+        }
+
+        .services-list li:before {
+            content: "★";
+            position: absolute;
+            left: 0;
+            color: #00a86b;
+            font-weight: bold;
+            font-size: 18px;
+        }
+
+        .approach-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 30px;
+            margin: 50px 0;
+        }
+
+        .approach-card {
+            background: linear-gradient(135deg, #00a86b 0%, #008c5c 100%);
+            color: white;
+            padding: 40px;
+            border-radius: 14px;
+            text-align: center;
+            box-shadow: 0 8px 25px rgba(0, 168, 107, 0.2);
+        }
+
+        .approach-card .icon {
+            font-size: 40px;
+            margin-bottom: 15px;
+        }
+
+        .approach-card h4 {
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 15px;
+        }
+
+        .approach-card p {
+            font-size: 14px;
+            line-height: 1.6;
+            opacity: 0.95;
+        }
+
+        .holistic-features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 25px;
+            margin: 50px 0;
+        }
+
+        .feature-box {
+            background: #f0f9f5;
+            padding: 25px;
+            border-radius: 10px;
+            border: 2px solid #00a86b;
+            text-align: center;
+        }
+
+        .feature-box h5 {
+            color: #00a86b;
+            font-size: 16px;
+            margin-bottom: 10px;
+            font-weight: 600;
+        }
+
+        .feature-box p {
+            font-size: 13px;
+            color: #555;
+            line-height: 1.5;
+        }
+
+        @media (max-width: 768px) {
+            .care-block {
+                padding: 30px;
+            }
+
+            .care-block h3 {
+                font-size: 22px;
+            }
+
+            .approach-card {
+                padding: 30px;
+            }
+
+            .approach-card .icon {
+                font-size: 32px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <header class="navbar">
+        <div class="container">
+            <div class="logo">
+                <img src="assets/images/Logo.png" alt="AHCF Logo" class="logo-image">
+            </div>
+            <button class="hamburger" id="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+            <nav class="nav-menu" id="navMenu">
+                <a href="index.html" class="nav-link">Home</a>
+                <a href="about.html" class="nav-link">About Us</a>
+                <a href="services.html" class="nav-link">Services</a>
+                <a href="work.html" class="nav-link">Our Work</a>
+                <a href="contact.html" class="nav-link">Contact</a>
+                <a href="donate.html" class="nav-link donate-btn">Donate</a>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Arunaashray Holistic Care Center</h1>
+            <p>Comprehensive care for advanced medical illnesses and aging</p>
+        </div>
+    </section>
+
+    <!-- Coming Soon -->
+    <section class="history">
+        <div class="container">
+            <div class="story-content">
+                <div style="text-align: center; padding: 80px 20px;">
+                    <h2 style="font-size: 42px; color: #00a86b; margin-bottom: 20px;">🚀 Coming Soon</h2>
+                    <p style="font-size: 18px; color: #666; line-height: 1.8; max-width: 600px; margin: 0 auto;">
+                        Our Arunaashray Holistic Care Center is under development. We're building a comprehensive
+                        facility dedicated to providing compassionate, integrated care for individuals dealing with
+                        advanced medical illnesses and aging. Stay tuned for updates as we bring quality healthcare
+                        to those who need it most.
+                    </p>
+                    <div style="margin-top: 40px;">
+                        <a href="contact.html" style="display: inline-block; background: #00a86b; color: white; padding: 12px 30px; 
+                                                       border-radius: 6px; text-decoration: none; font-weight: 600; 
+                                                       transition: background 0.3s ease;"
+                            onmouseover="this.style.background='#008c5c'" onmouseout="this.style.background='#00a86b'">
+                            Get Notified
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section">
+                <h4>About AHCF</h4>
+                <p>Arunaashray Health Care Foundation is dedicated to providing accessible healthcare to underserved
+                    communities.</p>
+            </div>
+            <div class="footer-section">
+                <h4>Quick Links</h4>
+                <ul>
+                    <li><a href="about.html">About Us</a></li>
+                    <li><a href="work.html">Our Work</a></li>
+                    <li><a href="donate.html">Donate</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contact Info</h4>
+                <p class="footer-email">Email: arunaashraycancercare@gmail.com</p>
+                <p>Phone: +91-7999-11-7999</p>
+                <p>Address: B-63, Tirupati Abhinav homes, Ayodhya Bypass, Nishatpura, Bhopal, MP 462041</p>
+            </div>
+            <div class="footer-section">
+                <h4>Follow Us</h4>
+                <div class="social-links">
+                    <a href="https://www.facebook.com/ahcfoundation" target="_blank">Facebook</a>
+                    <a href="https://www.instagram.com/arunaashraycancercare?utm_source=ig_web_button_share_sheet&igsh=ZDNlZDc0MzIxNw=="
+                        target="_blank">Instagram</a>
+                    <a href="https://www.twitter.com/ahcf_official" target="_blank">Twitter</a>
+                </div>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2026 Arunaashray Health Care Foundation. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="assets/js/script.js"></script>
+    <script>
+        const hamburger = document.getElementById('hamburger');
+        const navMenu = document.getElementById('navMenu');
+
+        if (hamburger && navMenu) {
+            hamburger.addEventListener('click', function () {
+                navMenu.classList.toggle('active');
+                hamburger.classList.toggle('active');
+            });
+
+            document.querySelectorAll('.nav-link').forEach(link => {
+                link.addEventListener('click', function () {
+                    navMenu.classList.remove('active');
+                    hamburger.classList.remove('active');
+                });
+            });
+        }
+    </script>
+</body>
+
+</html>

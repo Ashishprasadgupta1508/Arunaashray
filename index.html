@@ -11,9 +11,15 @@
   <link rel="shortcut icon" href="assets/images/Logo.png" type="image/png">
   <script>
     if (window.location.hostname === "ahcf.org.in") {
-      window.location.href = "https://www.ahcf.org.in" + window.location.pathname;
+      window.location.replace(
+        "https://www.ahcf.org.in" +
+        window.location.pathname +
+        window.location.search +
+        window.location.hash
+      );
     }
   </script>
+
   <link rel="canonical" href="https://www.ahcf.org.in/" />
 </head>
 

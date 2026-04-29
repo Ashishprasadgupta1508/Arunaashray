@@ -41,12 +41,12 @@
       margin: 15px auto 0;
       display: block;
       border: 4px solid #f8f9fa;
-      box-shadow: 0 4px 12px rgba(0, 168, 107, 0.2);
+      box-shadow: 0 4px 12px rgba(244, 123, 32, 0.2);
     }
 
     .team-member:hover img {
       transform: scale(1.08);
-      box-shadow: 0 8px 20px rgba(0, 168, 107, 0.3);
+      box-shadow: 0 8px 20px rgba(244, 123, 32, 0.3);
     }
 
     .team-member h4 {
@@ -58,7 +58,7 @@
 
     .team-member p {
       font-weight: 600;
-      color: #fd971a;
+      color: var(--primary-color);
       margin-bottom: 8px;
       font-size: 14px;
     }
@@ -195,6 +195,9 @@
 
 <body>
 
+  <!-- Floating Tagline -->
+  <div class="floating-tagline">PALLIATIVE CARE IS EVERYONE'S BUSINESS</div>
+
   <!-- Navbar -->
   <header class="navbar">
     <div class="container">
@@ -292,32 +295,34 @@
 
       <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 40px;">
 
-        <!-- AIIMS Partnership Link Card -->
-        <a href="aiims-partnership.html" class="btn btn-primary btn-small">
+        <!-- A-I-I-M-S Link Card -->
+        <a href="A-I-I-M-S.html" class="btn btn-primary btn-small">
           <div
-            style="background: white; border-radius: 16px; padding: 45px 40px; border-top: 5px solid #fd971a; box-shadow: 0 4px 15px rgba(0,0,0,0.08); cursor: pointer; transition: all 0.3s ease; height: 100%;"
+            style="background: white; border-radius: 16px; padding: 45px 40px; border-top: 5px solid var(--primary-color); box-shadow: 0 4px 15px rgba(0,0,0,0.08); cursor: pointer; transition: all 0.3s ease; height: 100%;"
             onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.15)'"
             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)'">
             <div style="font-size: 50px; margin-bottom: 20px;">🏥</div>
-            <h3 style="color: #fd971a; font-size: 26px; margin-bottom: 15px; font-weight: 700;">AIIMS Partnership</h3>
-            <p style="color: #666; font-size: 15px; line-height: 1.6; margin-bottom: 20px;">Bridging excellence in
-              healthcare with accessibility. World-class medical expertise through strategic AIIMS collaboration.</p>
-            <div style="color: #fd971a; font-weight: 600; font-size: 14px;">Learn More →</div>
+            <h3 style="color: var(--primary-color); font-size: 26px; margin-bottom: 15px; font-weight: 700;">AIIMS</h3>
+            <p style="color: #666; font-size: 15px; line-height: 1.6; margin-bottom: 20px;">Arunaashray Institute of
+              Integrated Medical Sciences - Comprehensive palliative care training and integrated medicine education for
+              healthcare professionals.</p>
+            <div style="color: var(--primary-color); font-weight: 600; font-size: 14px;">Learn More →</div>
           </div>
         </a>
 
         <!-- Holistic Care Center Link Card -->
         <a href="holistic-care-center-advanced.html" class="btn btn-primary btn-small">
           <div
-            style="background: white; border-radius: 16px; padding: 45px 40px; border-top: 5px solid #fd971a; box-shadow: 0 4px 15px rgba(0,0,0,0.08); cursor: pointer; transition: all 0.3s ease; height: 100%;"
+            style="background: white; border-radius: 16px; padding: 45px 40px; border-top: 5px solid var(--primary-color); box-shadow: 0 4px 15px rgba(0,0,0,0.08); cursor: pointer; transition: all 0.3s ease; height: 100%;"
             onmouseover="this.style.transform='translateY(-8px)'; this.style.boxShadow='0 12px 30px rgba(0,0,0,0.15)'"
             onmouseout="this.style.transform='translateY(0)'; this.style.boxShadow='0 4px 15px rgba(0,0,0,0.08)'">
             <div style="font-size: 50px; margin-bottom: 20px;">🧘</div>
-            <h3 style="color: #fd971a; font-size: 26px; margin-bottom: 15px; font-weight: 700;">Holistic Care Center
+            <h3 style="color: var(--primary-color); font-size: 26px; margin-bottom: 15px; font-weight: 700;">Holistic
+              Care Center
             </h3>
             <p style="color: #666; font-size: 15px; line-height: 1.6; margin-bottom: 20px;">Comprehensive care for
               advanced medical illnesses and aging. Integrated medical, psychological, and wellness support.</p>
-            <div style="color: #fd971a; font-weight: 600; font-size: 14px;">Learn More →</div>
+            <div style="color: var(--primary-color); font-weight: 600; font-size: 14px;">Learn More →</div>
           </div>
         </a>
 

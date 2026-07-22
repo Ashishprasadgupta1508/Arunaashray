@@ -1705,6 +1705,49 @@ body {
   gap: 40px;
   align-items: center;
 }
+.hero-title{
+    display:flex;
+    justify-content:center;
+    margin:40px 0;
+}
+
+.hero-title h1{
+    padding:18px 50px;
+    font-size:48px;
+    font-weight:900;
+    color:#fff;
+    text-transform:uppercase;
+    border-radius:20px;
+    background:linear-gradient(135deg,#7b2ff7,#f107a3);
+    box-shadow:0 15px 40px rgba(123,47,247,.45);
+    letter-spacing:2px;
+    animation:float 3s ease-in-out infinite;
+}
+
+.hero-title span{
+    color:#ffd700;
+}
+
+@keyframes float{
+    0%,100%{
+        transform:translateY(0);
+    }
+    50%{
+        transform:translateY(-6px);
+    }
+}
+@media (max-width:768px){
+
+    .announcement-box{
+        padding:20px 15px;
+        border-radius:20px;
+    }
+
+    .announcement-box h1{
+        font-size:2rem;
+        line-height:1.25;
+    }
+}
 
 .allocation-bar {
   display: flex;

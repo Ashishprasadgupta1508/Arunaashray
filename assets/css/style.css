@@ -1780,6 +1780,32 @@ body {
     justify-content:center;
     margin:40px 0;
 }
+.apply-section{
+    margin-top:20px;
+    text-align:center;
+}
+
+.apply-btn{
+    display:inline-block;
+    padding:14px 35px;
+    background:linear-gradient(135deg,#ff6a00,#ff9800);
+    color:#fff;
+    text-decoration:none;
+    font-size:18px;
+    font-weight:700;
+    border-radius:50px;
+    transition:.3s ease;
+    box-shadow:0 8px 20px rgba(255,106,0,.35);
+}
+
+.apply-btn:hover{
+    transform:translateY(-4px) scale(1.05);
+    box-shadow:0 12px 30px rgba(255,106,0,.5);
+}
+
+.apply-btn:active{
+    transform:scale(.98);
+}
 
 .hero-title h1{
     padding:18px 50px;
